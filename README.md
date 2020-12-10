@@ -24,11 +24,13 @@ deploy:
   repo: <repository url>
   message: [message]
   include_hidden: false
+  static_json: <static.json file path>
 ```
 
 - **repo**: Repository URL.
 - **message**: Commit message. The default commit message is `Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}`.
 - **include_hidden**: Include hidden files (starting with `.`) when copying from the source.
+- **static_json**: Path to the custom `static.json` file that will overwrite the default if given.
 
 ## Reset
 
