@@ -23,10 +23,12 @@ deploy:
   type: heroku
   repo: <repository url>
   message: [message]
+  include_hidden: false
 ```
 
-- **repo**: Repository URL
+- **repo**: Repository URL.
 - **message**: Commit message. The default commit message is `Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}`.
+- **include_hidden**: Include hidden files (starting with `.`) when copying from the source.
 
 ## Reset
 
